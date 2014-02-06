@@ -15,7 +15,7 @@ TEMPLATE_DEBUG = DEBUG
 # although not all variations may be possible on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'America/New_York'
 
 # Auth Profile (Contributor)
 # *********** THIS IS BROKEN RIGHT NOW *************
@@ -78,9 +78,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.doc.XViewMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-	'crimsononline.mware.supercrisismode.SuperCrisisMode',
+    'crimsononline.mware.supercrisismode.SuperCrisisMode',
     'django.middleware.cache.FetchFromCacheMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'crimsononline.urls'
@@ -110,7 +109,6 @@ INSTALLED_APPS = [
     'crimsononline.subscriptions',
     'crimsononline.mware',
     'crimsononline.promote',
-    'debug_toolbar',
 ]
 
 INTERNAL_IPS = ( )
